@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="gb2312"?>
+
+<pages>
+
+	<!-- 
+		totalRowCount - 记录总数
+		totalPageNum - 总页数
+		maxPageRowCount - 每页显示行数
+		currentPageNum - 当前页码
+		url - 连接地址
+		pageNum - 自动页码 用于body循环
+	 -->
+	<page name="default">
+		<top>
+			<![CDATA[ ]]>
+		</top>
+		<stat>
+			<![CDATA[ 
+				页次:${currentPageNum}/${totalPageNum}页 共有:${totalRowCount}条记录 每页:${maxPageRowCount}条记录&nbsp;
+			]]>
+		</stat>
+		<first>
+			<![CDATA[ <a href="${url}">[1]..</a> ]]>
+		</first>
+		<prev>
+			<![CDATA[ <a href="${url}">[&lt;]</a> ]]>
+		</prev>
+		<body-on>
+			<![CDATA[ <strong>[${pageNum}]</strong> ]]>
+		</body-on>
+		<body-off>
+			<![CDATA[ <a href="${url}">[${pageNum}]</a> ]]>
+		</body-off>
+		<next>
+			<![CDATA[ <a href="${url}">[&gt;]</a> ]]>
+		</next>
+		<last>
+			<![CDATA[ <a href="${url}">..[${totalPageNum}]</a> ]]>
+		</last>
+		<tail>
+			<![CDATA[ ]]>
+		</tail>
+	</page>
+
+</pages>
