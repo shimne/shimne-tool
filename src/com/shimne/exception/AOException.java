@@ -8,7 +8,7 @@ public class AOException extends NestedRuntimeException
 	{
 		super(message);
 	}
-
+ 
 	public AOException(String message, Throwable cause)
 	{
 		super(message, cause);
